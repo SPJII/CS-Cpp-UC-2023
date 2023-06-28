@@ -1,0 +1,22 @@
+Preprocessing:
+During the preprocessing phase, lines of code that start with a # are looked for in your source code. 
+These lines are called preprocessor directives because they tell the preprocessor what to do. 
+The #include preprocessor directive will show up more often than any other processor directive.
+This directive tells the preprocessor to replace that line of code with the contents of another file. 
+During our demonstration, we saw what that looks like.
+
+Compilation
+After our code has been preprocessed, 
+it is turned into code that the compiler can run directly during the compilation step. 
+But, unfortunately, 
+some very important supporting information is missing from that code. 
+This missing information is actually code that the compiler can use to do low-level tasks like accessing and storing files, 
+talking over the Internet, etc.
+
+Linking
+During the linking step,
+the runtime libraries are put together with the native code that was made from our preprocessed source code.
+Runtime libraries are support libraries that are provided by a high-level programming language or the operating system.
+They help with platform-specific functions that vary from hardware vendor to hardware vendor or operating system to operating system.
+For example, there are different ways to access a hard drive depending on the operating system and the hardware vendor.
+Runtime libraries make it easier to do this. If your program needs to use those features, it will need to link to those libraries.
